@@ -1,0 +1,265 @@
+
+<style scoped type="text/css">
+	ol>dl { font-style: italic; }
+	ol { counter-reset: item; -webkit-padding-start: 0px; }
+	ol>li { list-style-type: none; }
+	ol>li:before { content: counters(item, ".") " "; counter-increment: item; float: left; width: 50px; font-weight: bold; }
+	h1 { font-size: 2em; }
+	h2, ol>li:before { font-size: 1.6em; }
+	h3, ol>li>ol>li:before { font-size: 1.3em; }
+	h4, ol>li>ol>li>ol>li:before { font-size: 1em; }
+	h5, ol>li>ol>li>ol>li>ol>li:before { font-size: 0.8em; }
+
+	body {
+		font-size: 13pt;
+		/*padding: 1.5cm 2.5cm 1.5cm;*/
+		font-family: "Times New Roman";
+		max-width: 18cm;
+		margin: auto;
+	}
+	p, ul>li {
+		font-size: 1em;
+		line-height: 150%;
+		text-align: justify;
+		text-indent: 20px;
+	}
+	ul {
+		margin-bottom: 20px;
+	}
+
+	@media only screen and (max-width: 640px) {
+		body {
+			padding: 10px;
+		}
+	}
+</style>
+
+<header>
+	<h1>Moderní podpora prodeje pomocí mobilních technologií</h1>
+	<h2>Vývoj mobilní aplikace ve frameworku IBM Worklight pro podporu analytických marketingových metod v retailu</h2>
+</header>
+
+<section id="abstract">
+	<h2>Abstrakt</h2>
+	<p></p>
+</section>
+
+<section id="content">
+	<ol>
+		<li><h2>Úvod</h2>
+			<p>
+				Práce se zabývá popsáním vývoje mobilní aplikace, která je jednou ze součástí služby pro podporu prodeje v retailových řetězcích{$note[0]}. Tato služba má v daném oboru široký záběr. Postihuje maloobchodní procesy od jednoduchého marketingu, přes analytickou práci s daty až po personalizovaný marketing. Služba je vytvářena za pomoci různých nástrojů, které jsou ve většině případů poskytované společností IBM. Ovšem kromě těchto komerčních nástrojů je využíváno i řady opensource řešení.
+			</p>
+			<p>
+				Samotná mobilní aplikace je hlavním předmětem práce. Je popsán její vývoj a to od podnikatelského záměru, přes analytickou přípravu až k samotnému programování. Mobilní aplikace se v současné době vyvíjejí různými způsoby a v zásadě pro každý typ telefonu (nebo alespoň platformu) zvlášť. Při tomto vývoji je náročnost tvorby aplikace násobena počtem podporovaných platforem. Pro zvýšení konkurenceschopnosti nad ostatními vývojovými laboratoři je třeba v prvé řadě snížit náklady na vývoj. Aplikace, která je předmětem praktické části této práce, je vyvíjena jako nativní (pro veškeré známé platformy) a zároveň pro webové prostředí. K tomu, aby takovýto vývoj byl co nejednoduší, je využíváno produktu IBM Worklight.
+			</p>
+			<p>
+				Nedílnou součástí práce je popis služby pro podporu retailu. Před samotným vývojem aplikace je tedy popsána organizace, která službu tvoří, její vize a cíle a kompletně celý záměr služby. Maloobchodní řetězce dosud dostatečně nevyužívají zákaznická data, natož aby je využívali efektivně. Vytvářenou službou je kompletně postihnut proces práce s daty napříč obchody i zákazníky. Mobilní aplikace je zde jedním významným nástrojem, díky kterému je možné komunikovat s koncovým zákazníkem.
+			</p>
+			<p>
+				Aby byla pochopena praktická část práce, je obecně problematika popsána v teoretické části. V práci jsou potřebné součásti popsány z hlediska mobilního vývoje pomocí frameworku IBM Worklight. Dále je pak popsáno, jak je možné pracovat s daty a využívat je v marketingu. Jedna z nejdůležitějších částí je popsání specifických aspektů maloobchodních řetězců z pohledu marketingu a prodeje a nové možnosti, které lze v tomto kontextu využít. Samotný vývoj aplikace je třeba také uchopit formalizovaným způsobem a postupovat podle předem zvolené metodiky, která je v teoretické části popsána.
+			</p>
+			<p>
+				Velkým přínosem práce je samotné řešení, kterému se doposud v české republice, ale ani v blízkém zahraničí žádná firma nevěnovala. Otázka personifikace zákaznických dat je nejvíce se vyvíjejícím oborem marketingu a především internetové společnosti se na něj v poslední době zaměřují. V oblasti retailu neboli maloobchodních řetězců se tyto praktiky doposud využívají v omezené míře. Tato práce by měla posloužit k osvětě zmíněného tématu. Zaměření je ovšem na mobilní aplikaci, která veškeré probrané možnosti pomůže aplikovat přímo na zákazníka v praxi.
+			</p>
+			<ol>
+				<li><h3>Cíle a výstupy</h3>
+					<p>
+						Hlavním cílem práce je <strong>navrhnout, vyvinout a nasadit mobilní aplikaci pro zákaznickou podporu v nakupování v maloobchodních řetězcích</strong>. Tato aplikace musí splňovat veškeré požadavky, které vytváří služba pro podporu analytického marketingu, vyvíjená paralelně s mobilní aplikací. K dosažení hlavního cíle práce je zapotřebí provést několik činností. Pro tyto činnosti jsou definovány vedlejší cíle práce. Za prvé je třeba vytvořit teoretické zázemí využívaných produktů, metod a praktik. Jedná se tedy o produkt IBM Worklight a jeho možnosti, popsání využívaných analytických metod a oborů, popis maloobchodních řetězců a představení agilních metodik v kontextu mobilních aplikací. V praktické části je třeba provést popis kompetenčního centra, vytvářejícího službu podpory prodeje a následně představit samotnou službu. Nejvíce tvůrčí činností je vývoj aplikace dle zvolené metodiky a následné popsání průběhu projektu. Nedílnou součástí výstupu práce je zhodnocení výsledků a doporučení pro budoucí zpracování.
+					</p>
+					<p>
+						Vedlejší cíle, které vypadnou z popsaných činností a jsou nezbytné pro dosažení hlavního cíle, jsou pak:
+					</p>
+					<ul>
+						<li>popsat teoretické zázemí IBM Worklight, Analytický marketing a retail,</li>
+						<li>analyzovat metodický vývoj mobilních aplikací,</li>
+						<li>navrhnout mobilní aplikaci podle požadavků služby,</li>
+						<li>vyvinout a nasadit navrhnutou mobilní aplikaci,</li>
+						<li>zhodnotit výsledky vývoje.</li>
+					</ul>
+					<p>
+						Z těchto vedlejších cílů vycházejí dílčí výstupy práce a jsou to tyto:
+					</p>
+					<ul>
+						<li>teoretický podklad pro porozumění problematiky,</li>
+						<li>vybraná a uzpůsobená metodika pro vývoj mobilní aplikace,</li>
+						<li>návrh a plán vývoje mobilní aplikace,</li>
+						<li>otestovaná a přístupná mobilní aplikace,</li>
+						<li>zpráva o výsledcích vývoje aplikace.</li>
+					</ul>
+				</li>
+				<li><h3>Důvod volby tématu</h3>
+					<p>
+						Od září roku 2012 spolupracuji na projektu kompetenčního centra IBM (Retail Analytics), které pravě popisovanou službu vyvíjí. Toto kompetenční centrum je pod záštitou školy a tým tvoří především studenti VŠE. Mým úkolem v kompetenčním centru je postarat se právě o komunikaci se zákazníkem pomocí mobilních zařízení. Jelikož se jedná především o školní projekt, je na jednotlivé části projektu nahlíženo jako na vědecké práce. Právě díky tomuto důvodu jsem se rozhodl tvořit mou diplomovou práci na zvolené téma. Mimo to tato práce částečně navazuje na mou bakalářskou práci, zabývající se vývojem webových aplikací pro mobilní zařízení.
+					</p>
+					<p>
+						V současné době se mj. zabývám tvorbou webových aplikací jako OSVČ. Doposud jsem vyvinul několik mobilních aplikací pro různé významné firmy (webové portály) jako je zapakatel.cz, nahrady.cz, skyplan.eu aj. a do této diplomové práce tak mohu přispět vlastními zkušenostmi a praxí v oboru. S rostoucím výkonem mobilních zařízení roste i význam webových aplikací vyvíjených standardními webovými technologiemi HTML5, CSS3 a ECMAScript 5 {$literature[0]}. Díky tomu je vývoj i nativních aplikací tímto způsobem stále příznivější.
+					</p>
+				</li>
+				<li><h3>Východiska a omezení</h3>
+					<p>
+						Projekt, ke kterému tato práce vzniká, je značně iniciativní a dává studentům možnost otevřeně otevírat nové směry a využívat moderní neověřené metody. Studenti mají tzv. <q>volnou ruku</q>. Některá omezení zde však jsou. Jelikož je projekt sponzorován společností IBM, je žádoucí využívat produkty právě této korporace. Veškeré vyžadované produkty jsou pak společností IBM poskytnuty kompetenčnímu centru k testování, vývoji a výzkumu a to v rámci podmínek bezplatně.
+					</p>
+					<p>
+						Projekt vzniká tzv. <q>na zelené louce</q> a je třeba jej od prvních chvil marketingově podporovat. K tomuto účelu bylo v kompetenčním centru ztvárněno marketingové oddělení, které se především o propagaci stará. Nicméně v návaznosti na to je třeba reagovat například na prováděné konference v průběhu projektu. Důsledek to může mít takový, že se v průběhu vývoje mobilní aplikace bude modifikovat zadání apod. Dále je třeba pracovat s časovými omezeními, které jsou dány přípravou na průběžné konference, vznikající na téma vyvíjené služby.
+					</p>
+					<p>
+						Omezením pro vývoj mobilní aplikace jsou technologické aspekty. Ačkoli technologie jsou omezením v každém projektu, v tomto vývoji je zamýšleno využívat ty nejmodernější (často až futuristické) možnosti mobilních zařízení. I když některé vymoženosti mohou být již nyní k dispozici, je možné, že v praxi jsou díky jiným výkonovým omezením takřka nepoužitelné.
+					</p>
+					<p>
+						Jednou podstatnou částí celého projektu je analýza zákaznických dat. Při vývoji je třeba počítat s tím, že výsledky těchto analýz přímo ovlivňují funkcionalitu a požadavky na mobilní aplikaci. Opačně však vývoje mobilní aplikace nemá tak důrazný vliv na datovou analýzu. Oproti tomu je však marketingové oddělení ovlivňováno vývojem mobilní aplikace.
+					</p>
+				</li>
+				<li><h3>Postup a struktura práce</h3>
+					<p>
+						Práce je rozdělena na dvě části. První část je teoretická a popisuje základní východiska, na kterých je postavena druhá praktická část. V praktické části je vytvářen hlavní výstup práce a tím je mobilní aplikace. Nicméně pro vývoj aplikace je důležitý i popis samotného kompetenčního centra, které se na podílí na vývoji služby pro podporu prodeje. Stejně tak je třeba popsat i zmíněnou službu. V následujících odstavcích je podrobně popsána struktura práce.
+					</p>
+					<p>
+						V první kapitole teoretické části je popsán zmiňovaný framework IBM Worklight a jeho nejpodstatnější součásti, které jsou využity v praktické části. V prvních podkapitolách je zmíněn hybridní vývoj mobilních aplikací a moderních technologií obecně. Čtenář tak získá náhled na současné možnosti ve světě mobilních zařízení. Tato kapitola částečně navazuje na mou bakalářskou práci {$literature[0]}, zabývající se tvorbou webových stránek pro mobilní zařízení. Ohledně frameworku nebo lépe produktu IBM Worklight je zmíněna především obecná myšlenka, přičemž praktické poznatky je možné získat z anotovaného kódu v praktické části (z příloh).
+					</p>
+					<p>
+						Druhá kapitola teoretické části je věnována analytickému marketingu. Tato kapitola z většiny nepřináší nic nového. Nicméně pro lepší pochopení jsou zde shrnuty hlavní poznatky, na kterých je následně v praktické části navrhnuta mobilní aplikace a propojení s analytickými nástroji. V této kapitole jsou poznamenány jak obecné principy (např. týkající se BI, CRM a Dataminingu), tak poznatky z článků vznikajících na VŠE v rámci kompetenčního centra IBM.
+					</p>
+					<p>
+						Třetí kapitola teoretické části postihuje obor retailu resp. maloobchodních řetězců a jeho specifika jak na trhu B2B, tak u prodeje koncovému zákazníkovi. V teoretické části se tato kapitola objevuje z toho důvodu, že vyvíjená aplikace a celkově služba vytvářená kompetenčním centrem je zaměřena právě na maloobchodní řetězce. Oblast retailu je z jistých pohledů specifická a je třeba na tyto odlišnosti pohlížet téměř ve všech etapách projektu.
+					</p>
+					<p>
+						Poslední kapitola teoretické části je jedna z nejpodstatnějších pro vývoj mobilní aplikace. Zabývá se metodikou vývoje softwaru a její nastavení pro vývoj mobilní aplikace pomocí hybridního přístupu. Nejprve jsou představeny metodiky, které mohou být pro specifický typ projektu vhodné. Následně je pak vybírána metodika, která poslouží jako základ pro vývoj a ta je doplněna a upravena praktiky z jiných agilních metodik. Tento metodický rámec je následně využíván v praktické části při vývoji mobilní aplikace.
+					</p>
+					<p>
+						V praktické části je v prvé řadě popsáno kompetenční centrum IBM (Retail Analytics), které stojí za tvorbou zmiňované služby. Toto kompetenční centrum je jistou formou společnosti, která má své partnery, organizační strukturu i vize a cíle. Tato kapitola jistě není nezbytnou, ovšem užitečnou částí pro pochopení podnikové politiky kompetenčního centra.
+					</p>
+					<p>
+						Další kapitola praktické části kompletně popisuje službu, pro kterou je mobilní aplikace vyvíjena. Služba se týká několika odvětví (marketing, analýza dat aj.) a ty jsou v jednotlivých podkapitolách popsány. Nejdůležitějším odvětvím, které je východiskem pro mobilní aplikaci, je datová analytika. Právě na ní, společně s cíli služby, je postavena mobilní aplikace, aby nejlépe podporovala prodej zákazníkovi.
+					</p>
+					<p>
+						Poslední kapitola praktické části je klíčovým prvkem celé práce. V této kapitole je krok po kroku vyvíjena mobilní aplikace resp. popsán její vývoj. Toto kapitola využívá veškerých poznatků popsaných v předchozích kapitolách. Výstup této kapitoly je zároveň výstupem celé práce a splnění cíle práce je závislé právě na této fázi. Proto je na tuto kapitolu kladen největší důraz a bylo zde vynaloženo nejvíce úsilí.
+					</p>
+					<p>
+						V závěru práce jsou zhodnoceny výsledky projektu vývoje mobilní aplikace a následně popsány naplněné cíle. V posledním bodu práce jsou shrnuty nápady a doporučení pro budoucí zpracování tzv. <q>future works</q>.
+					</p>
+				</li>
+				<li><h3>Použité metody</h3>
+					<p>
+						TODO Zatím žádné nejsou...
+					</p>
+				</li>
+				<li><h3>Rešerše prací</h3>
+					<ol>
+						<dl>Bibliografie</dl>
+						<li><h4>Running Lean</h4>
+							<h5>{$literature[1]}</h5>
+							<p>
+
+							</p>
+						</li>
+						<li><h4>Professional Mobile Application Development</h4>
+							<h5>{$literature[2]}</h5>
+						</li>
+						<li><h4>Pro iOS Web Design and Development</h4>
+							<h5>{$literature[3]}</h5>
+						</li>
+
+						<dl>Diplomové práce</dl>
+						<li><h4>Metodika pro vývoj webových aplikací</h4>
+							<h5>{$literature[4]}</h5>
+							<p>
+								Autor: Jan Mittner...
+							</p>
+						</li>
+
+						<dl>Bakalářské práce</dl>
+						<li><h4>Vývoj webových aplikací pro provoz na mobilních telefonech</h4>
+							<h5>{$literature[0]}</h5>
+							<p>
+								Jedná se o bakalářskou práci, kde vystupuji jako autor. Tato práce se zabývá vývojem webových aplikací pro provoz na mobilních zařízeních, jak vyplývá z názvu. V teoretické části práce jsou popsány technologie pro novodobou tvorbu webových stránek pomocí HTML5, CSS3 a JavaScriptu. Technologie jsou rozepsány relativně dopodrobna. Důležitou částí pro tuto práci je několik kapitol, které se zabývají vývojem nativních aplikací pomocí webových technologií. Práce byla dopsána v roce 2012 a poznatky jsou tedy relativně čerstvé.
+							</p>
+							<p>
+								V práci je popsán především framework PhoneGap, ze které ho je ve frameworku IBM Worklight využívána knihovna PhoneGap, dříve známá jako Cordova. Dále jsou popisovány některé frameworky, které jsou ovšem nyní díky výkonnostním neefektivitám v nativních mobilních aplikacích takřka nepoužitelné. Jedná se např. o framework jQuery Mobile či Sencha Touch. Nicméně v budoucnu mají tyto frameworky potenciál, jakmile se překlenou výkonnostní problémy mobilních zařízení.
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+
+		<dl>Teoretická část</dl>
+		<li><h2>IBM Worklight</h2>
+			<ol>
+				<li><h3>Hybridní vývoj</h3></li>
+				<li><h3>Mobilní technologie</h3></li>
+				<li><h3>Architektura</h3></li>
+				<li><h3>Možnosti</h3></li>
+				<li><h3>Implementace</h3></li>
+				<li><h3>Serverová část</h3></li>
+			</ol>
+		</li>
+		<li><h2>Analytický marketing</h2>
+			<ol>
+				<li><h3>Možnosti</h3></li>
+				<li><h3>Současné metody</h3></li>
+				<li><h3>Využití BI, CRM a Datamining</h3></li>
+				<li><h3>Výhledy do budoucna</h3></li>
+			</ol>
+		</li>
+		<li><h2>Retail (Maloobchodní řetězec)</h2>
+			<ol>
+				<li><h3>Definice retailu</h3></li>
+				<li><h3>Specifika prodeje</h3></li>
+				<li><h3>Současná situace</h3></li>
+				<li><h3>Koncový zákazník</h3></li>
+			</ol>
+		</li>
+		<li><h2>Metodický vývoj mobilní aplikace</h2>
+			<ol>
+				<li><h3>Agilní metodiky vývoje</h3></li>
+				<li><h3>Výběr metodik vývoje</h3></li>
+				<li><h3>Sestrojení metodického postupu</h3></li>
+				<li><h3>Úzká místa projektu</h3></li>
+			</ol>
+		</li>
+
+		<dl>Praktická část</dl>
+		<li><h2>Společnost Retail Analytics (Kompetenční centrum IBM)</h2>
+			<ol>
+				<li><h3>Vize a cíle</h3></li>
+				<li><h3>Partneři</h3>
+					<ol>
+						<li><h4>VŠE KIT</h4></li>
+						<li><h4>MKTI</h4></li>
+					</ol>
+				</li>
+				<li><h3>Popis činností</h3></li>
+				<li><h3>Organizační struktura</h3></li>
+			</ol>
+		</li>
+		<li><h2>Služba myStore - moderní metoda prodeje</h2>
+			<ol>
+				<li><h3>Popis služby</h3></li>
+				<li><h3>Cíle</h3></li>
+				<li><h3>Zákaznický segment</h3></li>
+				<li><h3>Architektura služby</h3></li>
+				<li><h3>Komunikace služby</h3></li>
+			</ol>
+		</li>
+		<li><h2>Vývoj aplikace</h2>
+			<ol>
+				<li><i>...dle zvoleného metodického postupu</i></li>
+			<li><h3>Průběh projektu</h3>
+				<ol>
+					<li><h4>Plán projektu</h4></li>
+					<li><h4>Konané konference</h4></li>
+					<li><h4>Výsledky</h4></li>
+				</ol>
+			</li>
+
+		<dl></dl>
+		<li><h2>Závěr</h2>
+			<ol>
+				<li><h3>Zhodnocení</h3></li>
+				<li><h3>Dosažené cíle</h3></li>
+				<li><h3>Future works</h3></li>
+			</ol>
+		</li>
+	</ol>
+</section>
