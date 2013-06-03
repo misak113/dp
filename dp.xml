@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book version="5.0" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <title>Moderní podpora prodeje pomocí mobilních technologií</title>
+
+    <author>
+      <personname><firstname>Michael</firstname><surname>Žabka</surname></personname>
+
+      <affiliation>
+        <orgname/>
+      </affiliation>
+    </author>
+
+    <pubdate>3.6.2013</pubdate>
+  </info>
+
+  <chapter>
+    <title>Úvod</title>
+
+    <section>
+      <title/>
+
+      <para>Práce se zabývá popsáním vývoje mobilní aplikace, která je jednou
+      ze součástí služby pro podporu prodeje v retailových
+      řetězcích{$note[0]}. Tato služba má v daném oboru široký záběr.
+      Postihuje maloobchodní procesy od jednoduchého marketingu, přes
+      analytickou práci s daty až po personalizovaný marketing. Služba je
+      vytvářena za pomoci různých nástrojů, které jsou ve většině případů
+      poskytované společností IBM. Ovšem kromě těchto komerčních nástrojů je
+      využíváno i řady opensource řešení.</para>
+
+      <para>Samotná mobilní aplikace je hlavním předmětem práce. Je popsán
+      její vývoj a to od podnikatelského záměru, přes analytickou přípravu až
+      k samotnému programování. Mobilní aplikace se v současné době vyvíjejí
+      různými způsoby a v zásadě pro každý typ telefonu (nebo alespoň
+      platformu) zvlášť. Při tomto vývoji je náročnost tvorby aplikace
+      násobena počtem podporovaných platforem. Pro zvýšení
+      konkurenceschopnosti nad ostatními vývojovými laboratoři je třeba v prvé
+      řadě snížit náklady na vývoj. Aplikace, která je předmětem praktické
+      části této práce, je vyvíjena jako nativní (pro veškeré známé platformy)
+      a zároveň pro webové prostředí. K tomu, aby takovýto vývoj byl co
+      nejednoduší, je využíváno produktu IBM Worklight.</para>
+
+      <para>Nedílnou součástí práce je popis služby pro podporu retailu. Před
+      samotným vývojem aplikace je tedy popsána organizace, která službu
+      tvoří, její vize a cíle a kompletně celý záměr služby. Maloobchodní
+      řetězce dosud dostatečně nevyužívají zákaznická data, natož aby je
+      využívali efektivně. Vytvářenou službou je kompletně postihnut proces
+      práce s daty napříč obchody i zákazníky. Mobilní aplikace je zde jedním
+      významným nástrojem, díky kterému je možné komunikovat s koncovým
+      zákazníkem.</para>
+
+      <para>Aby byla pochopena praktická část práce, je obecně problematika
+      popsána v teoretické části. V práci jsou potřebné součásti popsány z
+      hlediska mobilního vývoje pomocí frameworku IBM Worklight. Dále je pak
+      popsáno, jak je možné pracovat s daty a využívat je v marketingu. Jedna
+      z nejdůležitějších částí je popsání specifických aspektů maloobchodních
+      řetězců z pohledu marketingu a prodeje a nové možnosti, které lze v
+      tomto kontextu využít. Samotný vývoj aplikace je třeba také uchopit
+      formalizovaným způsobem a postupovat podle předem zvolené metodiky,
+      která je v teoretické části popsána.</para>
+
+      <para>Velkým přínosem práce je samotné řešení, kterému se doposud v
+      české republice, ale ani v blízkém zahraničí žádná firma nevěnovala.
+      Otázka personifikace zákaznických dat je nejvíce se vyvíjejícím oborem
+      marketingu a především internetové společnosti se na něj v poslední době
+      zaměřují. V oblasti retailu neboli maloobchodních řetězců se tyto
+      praktiky doposud využívají v omezené míře. Tato práce by měla posloužit
+      k osvětě zmíněného tématu. Zaměření je ovšem na mobilní aplikaci, která
+      veškeré probrané možnosti pomůže aplikovat přímo na zákazníka v
+      praxi.</para>
+
+      <section>
+        <title>Cíle a výstupy</title>
+
+        <para>Hlavním cílem práce je &lt;strong&gt;navrhnout, vyvinout a
+        nasadit mobilní aplikaci pro zákaznickou podporu v nakupování v
+        maloobchodních řetězcích&lt;/strong&gt;. Tato aplikace musí splňovat
+        veškeré požadavky, které vytváří služba pro podporu analytického
+        marketingu, vyvíjená paralelně s mobilní aplikací. K dosažení hlavního
+        cíle práce je zapotřebí provést několik činností. Pro tyto činnosti
+        jsou definovány vedlejší cíle práce. Za prvé je třeba vytvořit
+        teoretické zázemí využívaných produktů, metod a praktik. Jedná se tedy
+        o produkt IBM Worklight a jeho možnosti, popsání využívaných
+        analytických metod a oborů, popis maloobchodních řetězců a představení
+        agilních metodik v kontextu mobilních aplikací. V praktické části je
+        třeba provést popis kompetenčního centra, vytvářejícího službu podpory
+        prodeje a následně představit samotnou službu. Nejvíce tvůrčí činností
+        je vývoj aplikace dle zvolené metodiky a následné popsání průběhu
+        projektu. Nedílnou součástí výstupu práce je zhodnocení výsledků a
+        doporučení pro budoucí zpracování.</para>
+      </section>
+    </section>
+  </chapter>
+</book>
